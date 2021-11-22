@@ -1,8 +1,9 @@
+const path = require("path");
 var express = require("express");
 var app = express();
 const string = "Hello Express";
 function handle(req, res) {
-  res.send(string);
+  return res.sendFile(path.join(__dirname, "views/index.html"));
 }
 app.get("/", handle);
 console.log(string);
