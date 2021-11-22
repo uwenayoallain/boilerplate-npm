@@ -1,6 +1,6 @@
 {
 	"name": "fcc-learn-npm-package-json",
-	"version": "2.10.2",
+	"version": "1.0.0",
 	"author": "UWENAYO Alain Pacifique",
 	"description": "A package.json file generator for FCC",
 	"keywords": [
@@ -11,7 +11,7 @@
 	],
 	"dependencies": {
 		"express": "^4.17.1",
-		"moment": "^2.14.0"
+		"moment": "^2.10.2"
 	},
 	"license": "MIT",
 	"main": "server.js",
