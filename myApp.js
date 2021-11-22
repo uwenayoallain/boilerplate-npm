@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-const string = "Hello World";
+const string = "Hello Express";
 function handle(req, res) {
   res.send(string);
 }
