@@ -6,6 +6,11 @@ const { urlencoded } = require("body-parser");
 var app = express();
 const string = "Hello json";
 app.use("/public", express.static(path.join(__dirname, "public")));
+const middleware = (req, res, next) => {
+  req.time = new Date().toString();
+  next();
+};
+app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.path} - ${req.ip}`);
   next();
@@ -13,16 +18,11 @@ app.use((req, res, next) => {
 app.get("/", (req, res) =>
   res.sendFile(path.join(__dirname, "views/index.html"))
 );
-const middleware = (req, res, next) => {
-  req.time = new Date().toString();
-  next();
-};
 app.route("/now").get(middleware, (req, res) => {
   res.send({
     time: req.time,
   });
 });
-app.use(express.json(urlencoded({ extended: true })));
 app.get("/name", (req, res) => {
   const { first, last } = req.query;
   res.json({ name: first + " " + last });
