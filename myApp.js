@@ -16,10 +16,14 @@ const middleware = (req, res, next) => {
   req.time = new Date().toString();
   next();
 };
-app.get("/now", middleware, (req, res) => {
+app.route("/now").get(middleware, (req, res) => {
   res.send({
     time: req.time,
   });
+});
+app.get("/name", (req, res) => {
+  const { first, last } = req.query;
+  res.json({ name: first + " " + last });
 });
 app.get("/:word/echo", (req, res) => {
   const word = req.params.word;
