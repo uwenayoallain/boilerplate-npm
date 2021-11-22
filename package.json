@@ -1,5 +1,6 @@
 {
 	"name": "fcc-learn-npm-package-json",
+	"version": "1.0.0",
 	"author": "UWENAYO Alain Pacifique",
 	"description": "A package.json file generator for FCC",
 	"keywords": [ "fcc", "freecodecamp", "backend-api","backend" ],
