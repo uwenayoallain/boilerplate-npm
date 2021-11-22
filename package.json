@@ -5,6 +5,7 @@
 	"description": "A package.json file generator for FCC",
 	"keywords": [ "fcc", "freecodecamp", "backend-api","backend" ],
 	"dependencies": {
+		"moment":"2.14.0",
 		"express": "^4.17.1"
 	},
 	"license": "MIT",
