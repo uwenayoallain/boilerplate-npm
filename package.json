@@ -1,8 +1,9 @@
 {
 	"name": "fcc-learn-npm-package-json",
-	"author":"UWENAYO Alain Pacifique",
+	"author": "UWENAYO Alain Pacifique",
+	"description": "A package.json file generator for FCC",
 	"dependencies": {
-		"express": "^4.14.0"
+		"express": "^4.17.1"
 	},
 	"main": "server.js",
 	"scripts": {
@@ -10,6 +11,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://idontknow/todo.git"
+		"url": "https://github.com/uwenayoallain/boilerplate-npm"
 	}
 }
