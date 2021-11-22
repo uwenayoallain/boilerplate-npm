@@ -6,6 +6,7 @@
 	"dependencies": {
 		"express": "^4.17.1"
 	},
+	"license": "MIT",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
@@ -13,5 +14,9 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/uwenayoallain/boilerplate-npm"
+	},
+	"bugs": {
+		"url": "https://github.com/uwenayoallain/boilerplate-npm/issues"
+	  },
+	  "homepage": "https://fcc-backend-apis.herokuapp.com/"
 	}
-}
