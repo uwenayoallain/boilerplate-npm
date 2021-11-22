@@ -3,10 +3,15 @@
 	"version": "1.0.0",
 	"author": "UWENAYO Alain Pacifique",
 	"description": "A package.json file generator for FCC",
-	"keywords": [ "fcc", "freecodecamp", "backend-api","backend" ],
+	"keywords": [
+		"fcc",
+		"freecodecamp",
+		"backend-api",
+		"backend"
+	],
 	"dependencies": {
-		"moment":"2.14.0",
-		"express": "^4.17.1"
+		"express": "^4.17.1",
+		"moment": "^2.14.0"
 	},
 	"license": "MIT",
 	"main": "server.js",
@@ -19,6 +24,6 @@
 	},
 	"bugs": {
 		"url": "https://github.com/uwenayoallain/boilerplate-npm/issues"
-	  },
-	  "homepage": "https://fcc-backend-apis.herokuapp.com/"
-	}
+	},
+	"homepage": "https://fcc-backend-apis.herokuapp.com/"
+}
