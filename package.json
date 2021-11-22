@@ -13,7 +13,8 @@
 		"body-parser": "^1.19.0",
 		"cookie-parser": "^1.4.6",
 		"express": "^4.17.1",
-		"fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git"
+		"fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git",
+		"nodemon": "^2.0.15"
 	},
 	"license": "MIT",
 	"main": "server.js",
