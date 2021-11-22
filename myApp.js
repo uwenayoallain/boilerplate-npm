@@ -1,6 +1,7 @@
 require("dotenv").config();
 const path = require("path");
 var express = require("express");
+const { urlencoded } = require("body-parser");
 
 var app = express();
 const string = "Hello json";
@@ -21,6 +22,7 @@ app.route("/now").get(middleware, (req, res) => {
     time: req.time,
   });
 });
+app.use(express.json(urlencoded({ extended: true })));
 app.get("/name", (req, res) => {
   const { first, last } = req.query;
   res.json({ name: first + " " + last });
